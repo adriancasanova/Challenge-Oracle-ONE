@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Encryptador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="imagenes/Vector.png" alt="" class="vector" />
+    </header>
+    <main>
+      <input type="text" placeholder="Ingrese su texto aqui" class="input" />
+
+      <div class="aside" id="aside">
+        <img src="imagenes/Muñeco.png" alt="" class="muñeco" />
+        <h1 class="asideH1">Ningun mensaje fue encontrado</h1>
+        <p class="asideP">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+      </div>
+      <button class="copiar" id="copiar">Copiar</button>
+
+      <div class="footer">
+        <p class="advertencia">
+          <img src="imagenes/Vector (1).png" />Solo letras minúsculas y sin
+          acentos
+        </p>
+        <button class="botonEncriptar" id="botonEncriptar">Encriptar</button>
+        <button class="botonDesencriptar" id="botonDesencriptar">
+          Desencriptar
+        </button>
+      </div>
+      <footer class="piePagina">&copy; Adrián Casanova - 2022</footer>
+    </main>
+  </body>
+
+  <script>
+    var input = document.querySelector("input");
+
+    function encriptar(event) {
+      var resultText = input.value.toLowerCase();
+      let text = resultText.normalize("NFD").replace(/[\u0300-\u036f]/g, "");      
+      const nuevoTexto = text
+        .replace(/e/gi, "enter")
+        .replace(/i/gi, "imes")
+        .replace(/a/gi, "ai")
+        .replace(/o/gi, "ober")
+        .replace(/u/gi, "ufat");
+        
+      console.log(text + " -------- " + nuevoTexto);
+      document.getElementById("aside").innerHTML =
+        "<h1 class='prueba' id='textoACopiar'>" + nuevoTexto + "</h1>";
+      mostrar();
+    }
+
+    function desencriptar(event) {
+      var text = input.value;
+      const nuevoTexto = text
+        .replace(/enter/gi, "e")
+        .replace(/imes/gi, "i")
+        .replace(/ai/gi, "a")
+        .replace(/ober/gi, "o")
+        .replace(/ufat/gi, "u");
+        
+      console.log(text + " -------- " + nuevoTexto);
+      document.getElementById("aside").innerHTML =
+        "<h1 class='prueba'id='textoACopiar'>" + nuevoTexto + "</h1>";
+      mostrar();
+    }
+
+    document.getElementById("botonDesencriptar").onclick = desencriptar;
+
+    document.getElementById("botonEncriptar").onclick = encriptar;
+
+    function copiar(event) {
+      console.log("copiar");
+      var TXTCAJA = document.getElementById("textoACopiar");
+      var textoCopiar = TXTCAJA.innerHTML;
+      navigator.clipboard.writeText(textoCopiar);
+    }
+
+    document.getElementById("copiar").onclick = copiar;
+
+    function mostrar() {
+      var visible = document.getElementById("copiar");
+      visible.style.display = "block";
+    }
+
+
+
+
+
+
+
+    
+
+
+  </script>
+</html>

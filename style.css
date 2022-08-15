@@ -1,0 +1,165 @@
+body {
+  background-color: #e5e5e5;
+}
+
+.vector {
+  position: absolute;
+  left: 84px;
+  top: 40px;
+  bottom: 0%;
+}
+
+main .input {
+  position: relative;
+  height: 48px;
+  width: 577px;
+  left: 240px;
+  top: 168px;
+  border-radius: nullpx;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0a3871;
+  border: none;
+  background-color: #e5e5e5;
+}
+
+input:focus {
+  outline: 0;
+  outline: none;
+}
+
+::placeholder {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0a3871;
+}
+.aside {
+  position: relative;
+  height: 944px;
+  width: 400px;
+  left: 900px;
+  top: 40px;
+  border-radius: 32px;
+  background: #ffffff;
+}
+.muñeco {
+  margin-top: 243px;
+  margin-left: auto;
+}
+
+.asideH1 {
+  height: 58px;
+  width: 236px;
+  margin: auto;
+  border-radius: nullpx;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #343a40;
+}
+
+.asideP {
+  height: 48px;
+  width: 236px;
+  margin: auto;
+  border-radius: nullpx;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #495057;
+  font-family: Inter;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 150%;
+  text-align: Center;
+  vertical-align: Top;
+}
+
+.botonEncriptar {
+  color: #fff;
+  background-color: #0a3871;
+  height: 67px;
+  width: 328px;
+  margin-left: 140px;
+  margin-right: 24px;
+  margin-bottom: 72px;
+  margin-top: 0px;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.botonDesencriptar {
+  color: #0a3871;
+  background-color: #d8dfe8;
+  height: 67px;
+  width: 328px;
+  left: 252px;
+  top: 0px;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.advertencia {
+  margin-left: 140px;
+  padding: 8px;
+  height: 18px;
+  width: 265px;
+  left: 24px;
+  top: 0px;
+  border-radius: nullpx;
+  color: #495057;
+}
+
+.advertencia img {
+  margin-right: 8px;
+}
+
+.footer {
+  margin-top: -90px;
+}
+
+.prueba {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.copiar {
+  position: absolute;
+  display: none;
+  margin-left: 9%;
+  margin-top: 0px;
+  color: #0a3871;
+  background-color: #d8dfe8;
+  height: 67px;
+  width: 328px;
+  margin-left: 950px;
+  z-index: 0;
+  top: 930px;
+  border-radius: 24px;
+  padding: 24px;
+}
+.piePagina {
+    text-align: right;
+    margin-right: 35px;
+ font-size: 20px;
+}
