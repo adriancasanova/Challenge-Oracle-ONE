@@ -10,8 +10,9 @@
       <img src="imagenes/Vector.png" alt="" class="vector" />
     </header>
     <main>
-      <input type="text" placeholder="Ingrese su texto aqui" class="input" />
-
+      <input type="text" placeholder="Ingrese su texto aqui" class="input"/>
+     
+     <div class="asideResponsive">
       <div class="aside" id="aside">
         <img src="imagenes/Muñeco.png" alt="" class="muñeco" />
         <h1 class="asideH1">Ningun mensaje fue encontrado</h1>
@@ -20,8 +21,9 @@
         </p>
       </div>
       <button class="copiar" id="copiar">Copiar</button>
+    </div>   
 
-      <div class="footer">
+      <div class="botonGroup">
         <p class="advertencia">
           <img src="imagenes/Vector (1).png" />Solo letras minúsculas y sin
           acentos
@@ -46,9 +48,8 @@
         .replace(/i/gi, "imes")
         .replace(/a/gi, "ai")
         .replace(/o/gi, "ober")
-        .replace(/u/gi, "ufat");
-        
-      console.log(text + " -------- " + nuevoTexto);
+        .replace(/u/gi, "ufat");        
+    
       document.getElementById("aside").innerHTML =
         "<h1 class='prueba' id='textoACopiar'>" + nuevoTexto + "</h1>";
       mostrar();

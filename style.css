@@ -104,6 +104,8 @@ input:focus {
 }
 
 .botonDesencriptar {
+
+
   color: #0a3871;
   background-color: #d8dfe8;
   height: 67px;
@@ -129,7 +131,8 @@ input:focus {
   margin-right: 8px;
 }
 
-.footer {
+.botonGroup {
+  
   margin-top: -90px;
 }
 
@@ -159,7 +162,60 @@ input:focus {
   padding: 24px;
 }
 .piePagina {
-    text-align: right;
-    margin-right: 35px;
+ text-align: right;
+ margin-right: 35px;
  font-size: 20px;
 }
+
+
+
+@media only screen and (max-width: 992px) {
+  /*@media (max-width: 1174px) { */
+      .muñeco {
+          display: none;
+      }
+     .aside {     
+         height: 250px;
+          width: 90%;
+          left: 5%;
+          top: 700px;
+          display: flex;
+          flex-direction: column;       
+      }
+      
+        .asideP {
+          width: 624px;
+          height: 24px;
+        }
+        .asideH1 {
+          width: 624px;
+          height: 29px;
+        }    
+  
+  .botonGroup {
+     margin-top: 28%;
+     position: relative;
+     
+  }
+  .piePagina {
+    margin-top: 30%
+  }
+  
+  .copiar {
+  margin-left: 33%;
+  }
+   
+  }
+
+
+
+
+
+  
+
+
+
+
+ 
+
+
